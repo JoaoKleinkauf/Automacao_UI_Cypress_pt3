@@ -1,7 +1,9 @@
 /// <reference types='cypress' />
 
+const data = require('../fixtures/data.json')
+
 describe('Funcionalidade de Checkout', () => {    
     it('Login com AppActions', () => {
-        cy.login('gerente', 'GD*peToHNJ1#c$sgk08EaYJQ')
+        cy.login(data.usuario, data.senha)
     });
 });

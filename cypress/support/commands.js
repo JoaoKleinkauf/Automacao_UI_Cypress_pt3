@@ -22,5 +22,6 @@ Cypress.Commands.add('login', (user, pass) =>{
             cy.setCookie(name, value)
         })
     })
+    
     cy.visit("http://lojaebac.ebaconline.art.br/wp-admin")
 });
