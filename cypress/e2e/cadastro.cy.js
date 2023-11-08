@@ -1,18 +1,17 @@
 /// <reference types='cypress' />
 
 const fazCadastro = require('../support/pages/cadastro.page.js')
-var { faker } = require('@faker-js/faker');
+const { dashboardPage } = require('../support/pages/dashboard.page.js')
+const data = require('../fixtures/data.json')
 
 describe('Funcionalideda de Cadastro', () => {
     beforeEach(() => {
-        cy.visit('http://lojaebac.ebaconline.art.br')
+        cy.visit('http://lojaebac.ebaconline.art.br/wp-login.php')
     });
 
     it('Cadastro com sucesso', () => {
-        cy.get('.icon-user-unfollow').click()
 
-        fazCadastro.login(faker.internet.email(), 'teste')
-
-        cy.get('.woocommerce-MyAccount-content > :nth-child(3)').should('contain', 'A partir do painel de controle de sua conta, você')
+        fazCadastro.login(data.usuario, data.senha)
+        dashboardPage.siteName.should("be.visible")
     })
 });

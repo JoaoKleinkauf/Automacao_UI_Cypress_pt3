@@ -1,13 +1,20 @@
-{
-  "nome": "João",
-  "sobrenome": "Pedro",
-  "empresa": "Ebac",
-  "pais": "Brasil",
-  "endereco": "Av Brasil",
-  "complemento": "Casa",
-  "cidade": "Campo Bom",
-  "estado": "Rio Grande do Sul",
-  "cep": "93700000", 
-  "telefone": "911111111", 
-  "email": "joaopedro@teste.com"
-}
+[
+  {
+    "usuario": "gerente",
+    "senha": "GD*peToHNJ1#c$sgk08EaYJQ"
+  },
+
+  {
+    "nome": "João",
+    "sobrenome": "Pedro",
+    "empresa": "Ebac",
+    "pais": "Brasil",
+    "endereco": "Av Brasil",
+    "complemento": "Casa",
+    "cidade": "Campo Bom",
+    "estado": "Rio Grande do Sul",
+    "cep": "93700000",
+    "telefone": "911111111",
+    "email": "joaopedro@teste.com"
+  }
+]

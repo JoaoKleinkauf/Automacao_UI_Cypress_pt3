@@ -3,12 +3,12 @@
 class fazCadastro {
    get #user() { return cy.get("#reg_email")}
    get #pass() { return cy.get("#reg_password")}
-   get #login() { return cy.get(":nth-child(4) > .button")}
+   get #register() { return cy.get("wp-submit")}
 
-   login(user, pass){
-    this.#user.type(user)
-    this.#pass.type(pass)
-    this.#login.click()
+   register(email, pass){
+      this.#user.wait(200).type(email, {force: true})
+      this.#pass.type(pass)
+      this.#register.click()
    }
 }
 
