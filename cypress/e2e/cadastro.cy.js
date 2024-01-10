@@ -13,7 +13,11 @@ context('Deve realizar o cadastro de um novo usuario na loja ebac', () => {
     it('Completa o cadastro do usuario', () => {
         var emailFaker = faker.internet.email()
         var passFaker = faker.internet.password()
+        var nameFaker = faker.name.firstName()
+        var lastFaker = faker.name.lastName()
 
-        cadastroPage.fazCadastro(emailFaker, passFaker)
+        cy.get('.icon-user-unfollow').click()
+        cadastroPage.fazCadastro(emailFaker, passFaker, nameFaker, lastFaker)
+        cy.get('.woocommerce-message').should('contain', 'Detalhes da conta modificados com sucesso.')
     });
 });
