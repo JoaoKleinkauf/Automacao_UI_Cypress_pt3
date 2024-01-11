@@ -1,0 +1,14 @@
+{
+    "usuario": "gerente",
+    "senha": "GD*peToHNJ1#c$sgk08EaYJQ",
+
+    "firstname": "Fulano",
+    "lastname": "Ronaldo",
+    "pais": "BR",
+    "endereço": "Av Brasil, 1234",
+    "cidade": "São Paulo",
+    "estado": "SP",
+    "cep": "12123123",
+    "telefone": "59933445566",
+    "email": "gerente@gmail.com"
+}
