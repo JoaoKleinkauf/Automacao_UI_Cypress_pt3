@@ -46,10 +46,10 @@ Cypress.Commands.add('checkout', (firstName, lastName, pais, endereço, cidade, 
     fd.append('billing_postcode', cep)
     fd.append('billing_phone', telefone)
     fd.append('billing_email', email)
-    fd.append('payment_method', 'bacs')
+    fd.append('payment_method', 'cod')
     fd.append('terms', 'on')
     fd.append('terms-field', 1)
-    fd.append('woocommerce-process-checkout-nonce', 'd801bda706')
+    fd.append('woocommerce-process-checkout-nonce', '4a4f1248ac')
     fd.append('_wp_http_referer', `http://lojaebac.ebaconline.art.br/?wc-ajax=update_order_review`)
     cy.request({
         url: `http://lojaebac.ebaconline.art.br/?wc-ajax=checkout`,
