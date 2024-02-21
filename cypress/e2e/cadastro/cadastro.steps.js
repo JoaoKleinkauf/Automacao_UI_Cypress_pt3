@@ -1,21 +1,25 @@
 /// <reference types="cypress" />
 
-var faker = require('faker');
+const faker = require('faker-br');
 
 import { Given, When, Then } from "cypress-cucumber-preprocessor/steps";
-import { accountPage } from "../../support/pages/account.page";
-const { cadastro } = require('../../support/pages')
+import cadastroPage from "../support/pages/cadastro.page";
 
-Given("I visit EBAC Store register page", () => {
-    cy.visit('http://lojaebac.ebaconline.art.br/my-account/')
+Given("Dado que eu visite a EBAC Store", () => {
+    cy.visit('http://lojaebac.ebaconline.art.br')
 });
 
-When('I register with email and password', () => {
-    let emailFaker = faker.internet.email()
-    let passFaker = faker.internet.password()
-    cadastro.register(emailFaker, passFaker)
+When('Quando eu efetuar o cadastro de um usuario, uma senha e completar as informaçôes', () => {
+    var emailFaker = faker.internet.email()
+    var passFaker = faker.internet.password()
+    var nameFaker = faker.name.firstName()
+    var lastFaker = faker.name.lastName()
+
+    cy.get('.icon-user-unfollow').click()
+    cadastroPage.fazCadastro(emailFaker, passFaker, nameFaker, lastFaker)
 });
 
-Then('My account page must be visible', () => {
-    accountPage.pageTitle.should("be.visible")
+Then('Então deve aparecer uma mensagem garantido a modificação dos dado', () => {
+    cy.wait(3000)
+    cy.get('.woocommerce-message').should('contain', 'Detalhes da conta modificados com sucesso.').pageTitle.should("be.visible")
 });
