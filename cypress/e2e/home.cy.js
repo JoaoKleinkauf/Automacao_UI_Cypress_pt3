@@ -11,7 +11,7 @@ describe('Deve adicionar, remover e atualizar itens do carrinho', () => {
             cy.visit('http://lojaebac.ebaconline.art.br')
         });
 
-        it.only('Quando eu adicionar um item no carrinho', () => {
+        it('Quando eu adicionar um item no carrinho', () => {
             var emailFaker = faker.internet.email()
             var passFaker = faker.internet.password()
 
