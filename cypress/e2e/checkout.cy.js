@@ -1,6 +1,7 @@
 /// <reference types="cypress" />
 
 const data = require("../fixtures/data.json")
+const pedido = require("../fixtures/pedido.json")
 
 describe('Realiza o checkout de um produto', () => {
 
@@ -17,8 +18,9 @@ describe('Realiza o checkout de um produto', () => {
             });
 
             it('Então devo ser encaminhado para a pagina de agradecimento da EBAC Store', () => {
-                cy.addItem()
+                cy.addItem(pedido.url, pedido.tamanho, pedido.cor)
                 cy.checkout(data.firstname, data.lastname, data.pais, data.endereço, data.cidade, data.estado, data.cep, data.telefone, data.email)
+                cy.get('#terms').click()
                 cy.checkoutConfirm()
                 cy.get('.woocommerce-notice').should('contain', 'Obrigado. Seu pedido foi recebido.')
             });

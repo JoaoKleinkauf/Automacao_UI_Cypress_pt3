@@ -24,10 +24,13 @@ Cypress.Commands.add('login', (usuario, senha) => {
     
 })
 
-Cypress.Commands.add('addItem', () => {
-    cy.visit('http://lojaebac.ebaconline.art.br/product/augusta-pullover-jacket/')
-    cy.get('.button-variable-item-S').click()
-    cy.get('.button-variable-item-Blue').click()
+Cypress.Commands.add('addItem', (url, tamanho, cor) => {
+    cy.visit(url)
+    cy.get(tamanho).click()
+    cy.get(cor).click()
+    // cy.visit('http://lojaebac.ebaconline.art.br/product/augusta-pullover-jacket/')
+    // cy.get('.button-variable-item-S').click()
+    // cy.get('.button-variable-item-Blue').click()
     cy.get('.input-text').clear().type(1)
     cy.get('.single_add_to_cart_button').click()
     cy.get('.woocommerce-message > .button').click()
@@ -47,7 +50,7 @@ Cypress.Commands.add('checkout', (firstName, lastName, pais, endereço, cidade, 
     fd.append('billing_phone', telefone)
     fd.append('billing_email', email)
     fd.append('payment_method', 'cod')
-    fd.append('terms', 'on')
+    //fd.append('terms', 'on')
     fd.append('terms-field', 1)
     fd.append('woocommerce-process-checkout-nonce', '4a4f1248ac')
     fd.append('_wp_http_referer', `http://lojaebac.ebaconline.art.br/?wc-ajax=update_order_review`)
@@ -62,7 +65,8 @@ Cypress.Commands.add('checkout', (firstName, lastName, pais, endereço, cidade, 
 })
 
 Cypress.Commands.add('checkoutConfirm', () => {
-    cy.get('#terms').click()
-    cy.get('#place_order').click()
-    cy.wait(3000)
+    cy.get('#place_order').click( { force: true} ) 
+    // cy.get('#terms').click()
+    // cy.get('#place_order').click()
+    // cy.wait(3000)
 })

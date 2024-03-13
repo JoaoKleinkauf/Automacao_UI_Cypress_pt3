@@ -2,6 +2,7 @@
   "dependencies": {
     "cypress": "^13.6.2",
     "cypress-cucumber-preprocessor": "^4.3.1",
+    "cypress-html-reporter": "^11.0.0",
     "faker-br": "^0.4.1"
   },
   "devDependencies": {
@@ -10,7 +11,4 @@
   "cypress-cucumber-preprocessor": {
     "nonGlobalStepDefinitions": true
   }
-  
-  
 }
-
