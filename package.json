@@ -6,7 +6,8 @@
     "faker-br": "^0.4.1"
   },
   "devDependencies": {
-    "@cucumber/cucumber": "^10.2.1"
+    "@cucumber/cucumber": "^10.2.1",
+    "start-server-and-test": "^2.0.3"
   },
   "cypress-cucumber-preprocessor": {
     "nonGlobalStepDefinitions": true
