@@ -32,7 +32,7 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: '14'
-      - name: npx cypress rin
+      - name: npx cypress run
         uses: cypress-io/github-action@v3
         continue-on-error: true
         with:
