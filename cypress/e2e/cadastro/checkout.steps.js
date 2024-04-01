@@ -19,4 +19,4 @@ Then('Então devo ser encaminhado para a pagina de agradecimento da EBAC Store',
     cy.checkout(data.firstname, data.lastname, data.pais, data.endereço, data.cidade, data.estado, data.cep, data.telefone, data.email)
     cy.checkoutConfirm()
     cy.get('.woocommerce-notice').should('contain', 'Obrigado. Seu pedido foi recebido.')
-});  
+});    
