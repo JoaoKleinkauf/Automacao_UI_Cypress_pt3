@@ -3,6 +3,7 @@
   "browserPath": "",
   "browserVersion": "114.0.5735.289",
   "config": {
+    "projectId": "6p1mpk",
     "projectRoot": "D:\\EBAC\\modulo 22 trabalho",
     "projectName": "modulo 22 trabalho",
     "configFile": "cypress.config.js",
@@ -38,14 +39,13 @@
     "numTestsKeptInMemory": 0,
     "platform": "win32",
     "pageLoadTimeout": 60000,
-    "port": 63106,
-    "projectId": null,
+    "port": 59920,
     "redirectionLimit": 20,
     "reporter": "spec",
     "reporterOptions": null,
     "requestTimeout": 5000,
     "resolvedNodePath": "C:\\Program Files\\nodejs\\node.exe",
-    "resolvedNodeVersion": "18.16.1",
+    "resolvedNodeVersion": "20.14.0",
     "responseTimeout": 30000,
     "retries": {
       "runMode": 0,
@@ -73,10 +73,10 @@
         "channel": "stable",
         "displayName": "Chrome",
         "family": "chromium",
-        "majorVersion": "123",
+        "majorVersion": "125",
         "name": "chrome",
         "path": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe",
-        "version": "123.0.6312.86"
+        "version": "125.0.6422.142"
       },
       {
         "channel": "stable",
@@ -91,10 +91,10 @@
         "channel": "stable",
         "displayName": "Edge",
         "family": "chromium",
-        "majorVersion": "123",
+        "majorVersion": "125",
         "name": "edge",
         "path": "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe",
-        "version": "123.0.2420.65"
+        "version": "125.0.2535.85"
       },
       {
         "channel": "stable",
@@ -115,7 +115,7 @@
     "cypressInternalEnv": "production"
   },
   "cypressVersion": "13.6.2",
-  "endedTestsAt": "2024-04-01T23:48:19.947Z",
+  "endedTestsAt": "2024-06-06T13:11:43.077Z",
   "osName": "win32",
   "osVersion": "10.0.19045",
   "runs": [
@@ -128,9 +128,9 @@
         "passes": 1,
         "pending": 0,
         "failures": 0,
-        "start": "2024-04-01T23:47:16.129Z",
-        "end": "2024-04-01T23:47:30.853Z",
-        "duration": 14724
+        "start": "2024-06-06T13:09:27.303Z",
+        "end": "2024-06-06T13:09:44.968Z",
+        "duration": 17665
       },
       "screenshots": [],
       "spec": {
@@ -141,13 +141,13 @@
         "relative": "cypress\\e2e\\cadastro.cy.js"
       },
       "stats": {
-        "duration": 14726,
-        "endedAt": "2024-04-01T23:47:30.851Z",
+        "duration": 17666,
+        "endedAt": "2024-06-06T13:09:44.968Z",
         "failures": 0,
         "passes": 1,
         "pending": 0,
         "skipped": 0,
-        "startedAt": "2024-04-01T23:47:16.125Z",
+        "startedAt": "2024-06-06T13:09:27.302Z",
         "suites": 3,
         "tests": 1
       },
@@ -159,7 +159,7 @@
             }
           ],
           "displayError": null,
-          "duration": 11282,
+          "duration": 13010,
           "state": "passed",
           "title": [
             "Deve realizar o cadastro de um novo usuario na loja ebac",
@@ -177,22 +177,14 @@
       "reporterStats": {
         "suites": 3,
         "tests": 1,
-        "passes": 0,
+        "passes": 1,
         "pending": 0,
-        "failures": 1,
-        "start": "2024-04-01T23:47:32.412Z",
-        "end": "2024-04-01T23:47:48.129Z",
-        "duration": 15717
+        "failures": 0,
+        "start": "2024-06-06T13:10:45.771Z",
+        "end": "2024-06-06T13:11:05.371Z",
+        "duration": 19600
       },
-      "screenshots": [
-        {
-          "height": 720,
-          "name": null,
-          "path": "D:\\EBAC\\modulo 22 trabalho\\cypress\\screenshots\\checkout.cy.js\\Realiza o checkout de um produto -- Dado que eu acesse a EBAC Store -- Quando eu entrar na pagina de login do admin e efetuar o acesso, após realizar uma compra -- Então devo ser encaminhado para a pagina de agradecimento da EBAC Store (failed).png",
-          "takenAt": "2024-04-01T23:47:47.810Z",
-          "width": 1280
-        }
-      ],
+      "screenshots": [],
       "spec": {
         "absolute": "D:/EBAC/modulo 22 trabalho/cypress/e2e/checkout.cy.js",
         "fileExtension": ".js",
@@ -201,13 +193,13 @@
         "relative": "cypress\\e2e\\checkout.cy.js"
       },
       "stats": {
-        "duration": 15718,
-        "endedAt": "2024-04-01T23:47:48.126Z",
-        "failures": 1,
-        "passes": 0,
+        "duration": 19601,
+        "endedAt": "2024-06-06T13:11:05.370Z",
+        "failures": 0,
+        "passes": 1,
         "pending": 0,
         "skipped": 0,
-        "startedAt": "2024-04-01T23:47:32.408Z",
+        "startedAt": "2024-06-06T13:10:45.769Z",
         "suites": 3,
         "tests": 1
       },
@@ -215,12 +207,12 @@
         {
           "attempts": [
             {
-              "state": "failed"
+              "state": "passed"
             }
           ],
-          "displayError": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `.woocommerce-message > .button`, but never found it.\n    at Context.eval (webpack:///./cypress/support/commands.js:36:7)",
-          "duration": 13494,
-          "state": "failed",
+          "displayError": null,
+          "duration": 16766,
+          "state": "passed",
           "title": [
             "Realiza o checkout de um produto",
             "Dado que eu acesse a EBAC Store",
@@ -240,9 +232,9 @@
         "passes": 3,
         "pending": 0,
         "failures": 0,
-        "start": "2024-04-01T23:47:52.118Z",
-        "end": "2024-04-01T23:48:19.949Z",
-        "duration": 27831
+        "start": "2024-06-06T13:11:13.503Z",
+        "end": "2024-06-06T13:11:43.078Z",
+        "duration": 29575
       },
       "screenshots": [],
       "spec": {
@@ -253,13 +245,13 @@
         "relative": "cypress\\e2e\\home.cy.js"
       },
       "stats": {
-        "duration": 27833,
-        "endedAt": "2024-04-01T23:48:19.947Z",
+        "duration": 29576,
+        "endedAt": "2024-06-06T13:11:43.077Z",
         "failures": 0,
         "passes": 3,
         "pending": 0,
         "skipped": 0,
-        "startedAt": "2024-04-01T23:47:52.114Z",
+        "startedAt": "2024-06-06T13:11:13.501Z",
         "suites": 2,
         "tests": 3
       },
@@ -271,7 +263,7 @@
             }
           ],
           "displayError": null,
-          "duration": 8357,
+          "duration": 9454,
           "state": "passed",
           "title": [
             "Deve adicionar, remover e atualizar itens do carrinho",
@@ -286,7 +278,7 @@
             }
           ],
           "displayError": null,
-          "duration": 8649,
+          "duration": 8219,
           "state": "passed",
           "title": [
             "Deve adicionar, remover e atualizar itens do carrinho",
@@ -301,7 +293,7 @@
             }
           ],
           "displayError": null,
-          "duration": 7777,
+          "duration": 8311,
           "state": "passed",
           "title": [
             "Deve adicionar, remover e atualizar itens do carrinho",
@@ -313,10 +305,11 @@
       "video": null
     }
   ],
-  "startedTestsAt": "2024-04-01T23:47:16.125Z",
-  "totalDuration": 58277,
-  "totalFailed": 1,
-  "totalPassed": 4,
+  "runUrl": "https://cloud.cypress.io/projects/6p1mpk/runs/3",
+  "startedTestsAt": "2024-06-06T13:09:27.302Z",
+  "totalDuration": 66843,
+  "totalFailed": 0,
+  "totalPassed": 5,
   "totalPending": 0,
   "totalSkipped": 0,
   "totalSuites": 8,

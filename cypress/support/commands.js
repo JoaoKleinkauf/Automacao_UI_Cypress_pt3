@@ -1,5 +1,7 @@
 /// <reference types="cypress" />
 
+require('@reportportal/agent-js-cypress/lib/commands/reportPortalCommands')
+
 Cypress.Commands.add('login', (usuario, senha) => {
     const fd = new FormData()
     fd.append('log', usuario)
@@ -70,3 +72,5 @@ Cypress.Commands.add('checkoutConfirm', () => {
     // cy.get('#place_order').click()
     // cy.wait(3000)
 })
+
+

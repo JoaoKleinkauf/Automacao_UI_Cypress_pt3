@@ -5,7 +5,8 @@
     "cy:report": "cypress run --record --key 4630e457-7ffd-4792-901f-d182ffbe3de6",
     "cy:run": "npx cypress run",
     "test:allure": "npx cypress run --env allure=true",
-    "allure:open": "npx allure serve"
+    "allure:open": "npx allure serve",
+    "cypress-dashboard-run": "npx cypress run --record --key 76824f9c-d797-4854-9e04-1b859c517d45"
   },
   "dependencies": {
     "cypress": "^13.6.2",
@@ -15,6 +16,8 @@
   },
   "devDependencies": {
     "@cucumber/cucumber": "^10.2.1",
+    "@reportportal/agent-js-cypress": "^5.3.0",
+    "jest": "^29.7.0",
     "start-server-and-test": "^2.0.3"
   },
   "cypress-cucumber-preprocessor": {

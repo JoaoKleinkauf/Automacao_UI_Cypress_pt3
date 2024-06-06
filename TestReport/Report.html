@@ -35,7 +35,7 @@
   <div class="container mt-3">
     <div class="navbar-text" style="font-size: medium; color: #888;">
       Browser: electron - 114.0.5735.289  |  Cypress Ver: 13.6.2  |
-      Platform OS: win32  |  Passed: 4  | Failed: 1 |  Skipped: 0 |
+      Platform OS: win32  |  Passed: 5  | Failed: 0 |  Skipped: 0 |
       Total Tests: 5
     </div>
   </div>
@@ -54,23 +54,23 @@
     <tbody>
       <tr>
         <th class="shaded-label">Passing %</th>
-        <td>80%</td>
+        <td>100%</td>
       </tr>
       <tr>
         <th class="shaded-label">Failing %</th>
-        <td>20%</td>
+        <td>0%</td>
       </tr>
       <tr>
         <th class="shaded-label">Start Time</th>
-        <td>Apr 1, 2024, 08:47 PM GMT-3 </td>
+        <td>Jun 6, 2024, 10:09 AM GMT-3 </td>
       </tr>
       <tr>
         <th class="shaded-label">End Time</th>
-        <td>Apr 1, 2024, 08:48 PM GMT-3</td>
+        <td>Jun 6, 2024, 10:11 AM GMT-3</td>
       </tr>
       <tr>
         <th class="shaded-label">Execution time</th>
-        <td>0 min 58 sec</td>
+        <td>1 min 6 sec</td>
       </tr>
     </tbody>
   </table>
@@ -92,18 +92,24 @@
           <tbody>
             
         <tr >
-          <td style="width: 45%; text-align: left;">[Realiza o checkout de um produto] Dado que eu acesse a EBAC Store</td>
-          <td style="width: 45%; text-align: center;" class="failed">AssertionError: Timed out retrying after 4000ms: Expected to find element: `.woocommerce-message > .button`, but never found it.
-    at Context.eval (webpack:///./cypress/support/commands.js:36:7)</td>
-          <td style="width: 5%; text-align: center;"> <a href="http://127.0.0.1:8080/cypress/screenshots/checkout.cy.js/Realiza o checkout de um produto -- Dado que eu acesse a EBAC Store -- Quando eu entrar na pagina de login do admin e efetuar o acesso, após realizar uma compra -- Então devo ser encaminhado para a pagina de agradecimento da EBAC Store (failed).png" target="_blank">Screenshot</a></td>
+          <td style="width: 45%; text-align: left;">[Deve realizar o cadastro de um novo usuario na loja ebac] Dado que eu visite a EBAC Store</td>
+          <td style="width: 45%; text-align: center;" class="passed">Pass</td>
+          <td style="width: 5%; text-align: center;"></td>
           <td style="width: 5%;">00 min 14 sec</td>
         </tr>
       
         <tr >
-          <td style="width: 45%; text-align: left;">[Deve realizar o cadastro de um novo usuario na loja ebac] Dado que eu visite a EBAC Store</td>
+          <td style="width: 45%; text-align: left;">[Realiza o checkout de um produto] Dado que eu acesse a EBAC Store</td>
           <td style="width: 45%; text-align: center;" class="passed">Pass</td>
           <td style="width: 5%; text-align: center;"></td>
-          <td style="width: 5%;">00 min 12 sec</td>
+          <td style="width: 5%;">00 min 17 sec</td>
+        </tr>
+      
+        <tr >
+          <td style="width: 45%; text-align: left;">[Deve adicionar, remover e atualizar itens do carrinho] Dado que eu visite a pagina do produto na loja EBAC</td>
+          <td style="width: 45%; text-align: center;" class="passed">Pass</td>
+          <td style="width: 5%; text-align: center;"></td>
+          <td style="width: 5%;">00 min 10 sec</td>
         </tr>
       
         <tr >
@@ -118,13 +124,6 @@
           <td style="width: 45%; text-align: center;" class="passed">Pass</td>
           <td style="width: 5%; text-align: center;"></td>
           <td style="width: 5%;">00 min 09 sec</td>
-        </tr>
-      
-        <tr >
-          <td style="width: 45%; text-align: left;">[Deve adicionar, remover e atualizar itens do carrinho] Dado que eu visite a pagina do produto na loja EBAC</td>
-          <td style="width: 45%; text-align: center;" class="passed">Pass</td>
-          <td style="width: 5%; text-align: center;"></td>
-          <td style="width: 5%;">00 min 08 sec</td>
         </tr>
       
           </tbody>
@@ -134,7 +133,7 @@
       <script>
         document.addEventListener('DOMContentLoaded', function () {
           // Call a function to draw the pie chart
-          drawPieChart(4, 1, 0);
+          drawPieChart(5, 0, 0);
         });
 
         function drawPieChart(pass, fail, skipped) {

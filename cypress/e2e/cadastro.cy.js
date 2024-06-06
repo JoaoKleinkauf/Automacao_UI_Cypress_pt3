@@ -1,8 +1,8 @@
 /// <reference types="cypress" />
 
-import cadastroPage from "../support/pages/cadastro.page";
-
 const faker = require('faker-br');
+
+import cadastroPage from "../support/pages/cadastro.page";
 
 describe('Deve realizar o cadastro de um novo usuario na loja ebac', () => {
 
@@ -10,7 +10,7 @@ describe('Deve realizar o cadastro de um novo usuario na loja ebac', () => {
         before(() => {
             cy.visit('http://lojaebac.ebaconline.art.br/')
         });
-
+        
         context('Quando eu efetuar o cadastro de um usuario, uma senha e completar as informaçôes', () => {
             beforeEach(() => {
                 var emailFaker = faker.internet.email()
